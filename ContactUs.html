@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ar">
+<head>
+<link type="Text/css" rel="stylesheet" href="maincss.css">
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var ol = document.getElementById('Students-Names');
+            var lis = Array.from(ol.getElementsByTagName('li'));
+            lis.sort(function () {
+              return 0.5 - Math.random();
+            });
+           
+            lis.forEach(function (li) {
+              ol.removeChild(li);
+            });
+    
+            lis.forEach(function (li) {
+              ol.appendChild(li);
+            });
+          });
+          
+        </script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<ul>
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="About.html">About</a></li>
+ <li><a href="Menu.html">Menu </a></li>
+<li><a href="Where.html">Where</a></li>
+<li><a href="Reservation.html">Reservation</a></li>
+<li><a href="Login.html">Login</a></li>
+<li><a href="signup.html">Sign Up</a></li>
+  <li style="float:right"><a class="active" href="ContactUs.html">contact us</a></li>
+
+</ul>
+
+<style>
+
+
+* {box-sizing: border-box;}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: Gray;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+h1{
+color :#856a47;}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <div style="text-align:center">
+    <h1>Contact Us</h1>
+    <h4><i>Swing by for a cup of coffee, or leave us a message:</i></h4>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="C:\Users\teafa\OneDrive\سطح المكتب\Project\images\location.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="sent.html">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+ <label for="iemail">Email</label><br>
+<input type="email" id="iemail" name="email"placeholder="xxxxx@hotmail.com" style="width: 250px;background-color:babyblue;color: black;">
+<br><br> 
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required pattern="[A-Za-z]{12}"></textarea>
+<a href="sent.html">
+<input type="submit" value="send"> </a>      
+      </form>
+    </div>
+  </div>
+</div>
+<br>
+<label for="Names">STUDENTS NAMES :
+</label>
+
+
+<ol id="Students-Names">
+<li>  Teaf Marzouq Alrashidi  </li>
+<li>  Taif Fraih Alanzi  </li>
+<li>  Shahad Ali Alharbi  </li>
+
+</ol>
+</body>
+</html>

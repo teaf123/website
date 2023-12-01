@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ar">
+<head>
+<link type="Text/css" rel="stylesheet" href="maincss.css">
+<style>
+form{
+background-image:url("bback.jpg");}
+
+h1{
+color :#856a47;
+}
+.clearbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+.submitbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+</style>
+
+</head>
+<body>
+<ul>
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="About.html">About</a></li>
+ <li><a href="Menu.html">Menu </a></li>
+<li><a href="Where.html">Where</a></li>
+<li><a href="Reservation.html">Reservation</a></li>
+<li><a href="Login.html">Login</a></li>
+<li><a href="signup.html">Sign Up</a></li>
+  <li style="float:right"><a class="active" href="ContactUs.html">contact us</a></li>
+
+</ul>
+<h1><i><u>Reserve a table</u></i></h1>
+<fieldset style="width: 40%;">
+    <legend>ask for today's special or just send us a messag</legend>
+    <form>
+<label>name</label>
+<input type="text" placeholder="write your name" style="width: 250px;color: black;">
+<br><br>
+<label>email</label>
+<input type="email" placeholder="xxxxx@hotmail.com" style="width: 250px;color: black;">
+<br><br>
+<label>phone</label>
+<input type="text" placeholder="0500000000" style="width: 250px;color:black;">
+<br><br>
+
+
+<label>best way to contact you :</label><br><br>
+<input type="checkbox" id="html" value="email"> email <br>
+<input type="checkbox" id="ss" value="phone"> phone
+<br><br>
+<label>type of reservation</label><br>
+<input type="radio" id="s1"   name="a1"  value="Birthday"> Birthday <br>
+<input type="radio" id="s2"  name="a1"  value="Anniversary"> Anniversary <br>
+<input type="radio" id="s3"  name="a1"  value="Special Celebration"> Special Celebration <br><br>
+<label>How many pepole</label><br><br>
+<select>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+     
+</select>
+<br><br>
+<label>Message/special requirements</label><br><br>
+<textarea rows="4" cols="8">...</textarea><br><br>
+
+<a href="sent.html">
+            <button type="button" class="submitbtn">Send</button></a>
+<button type="reset" class="clearbtn">Clear</button>
+
+</form>
+</fieldset>
+
+</body>
+</html>

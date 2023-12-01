@@ -1,0 +1,27 @@
+body {
+    background-color: beige;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        float: left;
+    }
+
+.active {
+    background-color: rgb(135, 122, 97);
+}
